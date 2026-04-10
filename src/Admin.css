@@ -1,0 +1,213 @@
+/* Admin Panel Styles */
+.admin-login {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.admin-login-box {
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 48px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.admin-login-box h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.admin-login-box p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 16px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.admin-login-box input:focus {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  color: #0a0a0a;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-login-box button:hover {
+  background: #e0e0e0;
+}
+
+.admin-error {
+  color: #ff4444;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.admin-header {
+  padding: 24px 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-header h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.admin-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.admin-stats span {
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-stats strong {
+  color: #fff;
+}
+
+.admin-stats button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-stats button:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.admin-content {
+  padding: 48px;
+}
+
+.admin-loading,
+.admin-empty {
+  text-align: center;
+  padding: 80px;
+  color: #666;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 16px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-weight: 500;
+}
+
+.admin-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  vertical-align: top;
+}
+
+.admin-table tr:hover td {
+  background: rgba(255,255,255,0.02);
+}
+
+.admin-date {
+  color: #666;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.admin-name {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.admin-email a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.admin-email a:hover {
+  color: #fff;
+}
+
+.admin-message {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 16px 24px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .admin-content {
+    padding: 24px;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+  
+  .admin-message {
+    max-width: 200px;
+  }
+}

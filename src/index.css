@@ -321,3 +321,13 @@ h1, h2, h3 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-secondary);
 }
+/* Приховуємо будь-які згадки про Emergent */
+[class*="emergent"], 
+[id*="emergent"], 
+a[href*="emergent"],
+div[style*="z-index: 9999999"] { 
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
